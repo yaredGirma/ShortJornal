@@ -1,0 +1,3 @@
+Uses BOM for dependencies...
+
+ Username/password are the same admin/admin & guest/guest

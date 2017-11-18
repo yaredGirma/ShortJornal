@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+	"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+	
+	<definition name="baseLayout" template="/WEB-INF/tiles/template/layoutTemplate.jsp">
+		<put-attribute name="title" value="Sample Title" />
+		<put-attribute name="heading" value="" />
+		<put-attribute name="tagline" value="" />
+ 		<put-attribute name="navigation" value="/WEB-INF/tiles/template/navigation.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/WEB-INF/tiles/template/footer.jsp" />
+	</definition>
+	
+	<definition name="addEvent" extends="baseLayout">
+		<put-attribute name="title" value="Add Event" />
+		<put-attribute name="tagline" value="Add an event" />
+		<put-attribute name="body" value="/WEB-INF/views/addEvent.jsp" />
+	</definition>
+
+ 	<definition name="welcome" extends="baseLayout">
+		<put-attribute name="title" value="Welcome" />
+		<put-attribute name="heading" value="Internationalization" />
+ 		<put-attribute name="body" value="/WEB-INF/views/welcome.jsp" />
+	</definition>
+	
+	
+	<definition name="posts" extends="baseLayout">
+		<put-attribute name="title" value="AnyThing" />
+ 		<put-attribute name="body" value="/WEB-INF/views/posts.jsp" />
+	</definition>
+	
+	<definition name="addPost" extends="baseLayout">
+		<put-attribute name="title" value="Add New Post" />
+ 		<put-attribute name="body" value="/WEB-INF/views/addPost.jsp" />
+	</definition>
+	
+	<definition name="addUserRegister" extends="baseLayout">
+		<put-attribute name="title" value="Sign Up" />
+		<put-attribute name="tagline" value="New User" />
+		<put-attribute name="body" value="/WEB-INF/views/addUserRegister.jsp" />
+	</definition>
+	
+	<definition name="blog" extends="baseLayout">
+		<put-attribute name="title" value="Weblog" />
+ 		<put-attribute name="body" value="/WEB-INF/views/blog.jsp" />
+		
+	</definition>
+	
+	<definition name="singlePost" extends="baseLayout">
+		<put-attribute name="title" value="" />
+ 		<put-attribute name="body" value="/WEB-INF/views/singlePost.jsp" />
+	</definition>
+	
+	
+	<definition name="editPost" extends="baseLayout">
+		<put-attribute name="title" value="Edit Old Post" />
+ 		<put-attribute name="body" value="/WEB-INF/views/editPost.jsp" />
+	</definition>
+	
+	<definition name="addAdminRegister" extends="baseLayout">
+		<put-attribute name="title" value="Register an admin" />
+		<put-attribute name="tagline" value="New Admin" />
+		<put-attribute name="body" value="/WEB-INF/views/addAdminRegister.jsp" />
+	</definition>
+	
+	<definition name="login" extends="baseLayout">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="heading" value="Login" />
+		<put-attribute name="tagline" value="Enter your Credentials" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="viewEvents" extends="baseLayout">
+		<put-attribute name="title" value="Events" />
+		<put-attribute name="tagline" value="View Your Events" />
+		<put-attribute name="body" value="/WEB-INF/views/viewEvents.jsp" />
+	</definition>
+	
+	<definition name="editEvent" extends="baseLayout">
+		<put-attribute name="title" value="Edit Event" />
+		<put-attribute name="tagline" value="Edit an event" />
+		<put-attribute name="body" value="/WEB-INF/views/editEvent.jsp" />
+	</definition>
+	
+	<definition name="members" extends="baseLayout">
+		<put-attribute name="title" value="registers" />
+		<put-attribute name="tagline" value="List of users" />
+		<put-attribute name="body" value="/WEB-INF/views/members.jsp" />
+	</definition>
+	<definition name="feedbackList" extends="baseLayout">
+		<put-attribute name="title" value="feedbacks" />
+		<put-attribute name="tagline" value="List of feadbacks" />
+		<put-attribute name="body" value="/WEB-INF/views/feedbackList.jsp" />
+	</definition>
+	
+	<definition name="feedbackDetail" extends="baseLayout">
+		<put-attribute name="title" value="feedback" />
+		<put-attribute name="tagline" value="Detail of a feadback" />
+		<put-attribute name="body" value="/WEB-INF/views/feedbackDetail.jsp" />
+	</definition>
+	
+	<definition name="AddFeedback" extends="baseLayout">
+		<put-attribute name="title" value="addfeedback" />
+		<put-attribute name="tagline" value="add a new feadback" />
+		<put-attribute name="body" value="/WEB-INF/views/AddFeedback.jsp" />
+	</definition>
+	
+	<definition name="member" extends="baseLayout">
+		<put-attribute name="title" value="addUser" />
+		<put-attribute name="tagline" value="add a new user" />
+		<put-attribute name="body" value="/WEB-INF/views/member.jsp" />
+	</definition>
+	 	
+</tiles-definitions>
